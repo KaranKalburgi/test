@@ -35,8 +35,7 @@ test.describe("Account", () => {
     const closeToast = toast.getByRole("button", { name: "Close" });
     if (await closeToast.isVisible()) {
         await closeToast.click();
-      }
-  
+    }
     await page.getByRole("button", { name: "Show more actions" }).click();
     await page.getByRole('menuitem', { name: 'Edit', exact: true }).click();
     await page.getByRole('combobox', { name: 'Gender' }).click();
