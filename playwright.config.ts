@@ -10,9 +10,9 @@ export default defineConfig({
   retries: 1,
   workers: 1,
   reporter: "html",
-  timeout: 100000,
+  timeout: 60000,
   expect: {
-    timeout: 100000,
+    timeout: 60000,
   },
   use: {
     //baseURL: 'https://axaxl.com',
@@ -22,8 +22,8 @@ export default defineConfig({
       width: 1440,
       height: 1200,
     },
-    actionTimeout: 100000,
-    navigationTimeout: 100000,
+    actionTimeout: 60000,
+    navigationTimeout: 60000,
     screenshot: "only-on-failure",
     video: "retain-on-failure",
     trace: "on-first-retry",
